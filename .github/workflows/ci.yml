@@ -28,7 +28,7 @@ jobs:
         working-directory: backend
 
       - name: Run ESLint
-        run: npx eslint@8 server.js --env node
+        run: npx eslint@8 server.js --env node --parser-options=ecmaVersion:2020
         working-directory: backend
 
   build-and-push:
