@@ -17,4 +17,4 @@ app.get("/api/users", (req, res) => {
   res.json([]);
 });
 
-app.listen(3000, () => console.log("VitalSync API on :3000"));S
+app.listen(3000, () => console.log("VitalSync API on :3000"));
