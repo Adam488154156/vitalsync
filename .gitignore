@@ -14,7 +14,11 @@ build/
 
 # Système d'exploitation
 .DS_Store
+<<<<<<< HEAD
 Thumbs.db
 
 # Docker
 .dockerignore
+=======
+Thumbs.db
+>>>>>>> develop
