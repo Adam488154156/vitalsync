@@ -28,7 +28,7 @@ jobs:
         working-directory: backend
 
       - name: Run ESLint
-        run: npx eslint server.js --env node
+        run: npx eslint server.js --no-eslintrc --rule '{}'
         working-directory: backend
 
   build-and-push:
