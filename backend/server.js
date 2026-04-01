@@ -2,14 +2,10 @@ const express = require("express");
 const app = express();
 
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", timestamp: new Date(), version: "1.0" });
+  res.json({ status: "healthy", timestamp: new Date(), uptime: process.uptime() });
 });
 
 app.get("/api/activities", (req, res) => {
-  res.json([]);
-});
-
-app.get("/api/users", (req, res) => {
   res.json([]);
 });
 
