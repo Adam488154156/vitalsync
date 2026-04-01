@@ -1,24 +1,20 @@
+// VitalSync API - Backend Express
 const express = require("express");
 const app = express();
 
+// Health check endpoint
 app.get("/health", (req, res) => {
-  res.json({ status: "healthy", timestamp: new Date(), uptime: process.uptime() });
+  res.json({ status: "healthy", timestamp: new Date(), uptime: process.uptime(), version: "1.0" });
 });
 
+// Activities endpoint
 app.get("/api/activities", (req, res) => {
   res.json([]);
 });
 
-<<<<<<< HEAD
+// Users endpoint
 app.get("/api/users", (req, res) => {
   res.json([]);
 });
 
-<<<<<<< HEAD
 app.listen(3000, () => console.log("VitalSync API on :3000"));
-=======
-app.listen(3000, () => console.log("API sur :3000"));
->>>>>>> feature/add-endpoint
-=======
-app.listen(3000, () => console.log("VitalSync API on :3000"));
->>>>>>> feature/update-health
